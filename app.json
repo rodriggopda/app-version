@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "MunícipeApp",
+    "slug": "municipeapp",
+    "version": "1.30.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "androidStatusBar": {
+      "backgroundColor": "#152E92",
+      "barStyle": "light-content",
+      "translucent": false
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#152E92"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "buildNumber": "1.31",
+      "userInterfaceStyle": "light",
+      "supportsTablet": false,
+      "bundleIdentifier": "br.com.municipe",
+      "config": {
+        "googleMapsApiKey": "AIzaSyCPuDpbPSUVFO8C0iet3Zj9GWUZbL7CF3M"
+      }
+    },
+    "android": {
+      "userInterfaceStyle": "light",
+      "versionCode": 31,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": {
+            "scheme": "https",
+            "host": "mobile.municipe.app",
+            "pathPrefix": "/"
+          },
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "package": "br.com.municipe",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBWXVjZw-zvat9W3VlUa_8vZaQBZlIfUy4"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "596702bc-3c68-40cf-96ca-04b275588fba"
+      }
+    },
+    "owner": "municipeapp",
+    "plugins": [
+      "./react-native-maps-plugin.js",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "deploymentTarget": "13.0"
+          }
+        }
+      ]
+    ]
+  }
+}
